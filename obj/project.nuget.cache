@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zdq7yUkQk6Q=",
+  "dgSpecHash": "BTZ0WLv7oEU=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\.NET\\minimal-api\\minimal-api.csproj",
+  "projectFilePath": "c:\\Projetos\\.NET\\minimal-api\\minimal-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus Jung\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Matheus Jung\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
