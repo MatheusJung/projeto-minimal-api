@@ -103,4 +103,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Ignorar pasta obj (arquivos temporários de build)
+obj/
+
+# Ignorar pasta bin (arquivos compilados)
+bin/
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,dotnetcore,visualstudiocode
