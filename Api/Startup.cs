@@ -58,6 +58,18 @@ public class Startup
         services.AddScoped<IAdministradorServico, AdministradorServico>();
         services.AddScoped<IVeiculoServico, VeiculoServico>();
         
+        // Registrar o serviço de CORS
+        services.AddCors(options =>
+        {
+        options.AddDefaultPolicy(builder=>
+        {
+            // Libera para qualquer origem, método e cabeçalho
+            builder.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+            });
+       });
+
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(options =>
         {
@@ -93,6 +105,8 @@ public class Startup
         app.UseRouting();
         app.UseAuthentication();
         app.UseAuthorization();
+
+        app.UseCors("*");
 
         app.UseEndpoints(endpoints =>
         {
